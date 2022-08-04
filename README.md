@@ -39,6 +39,7 @@ Once you run this command, a project will be generated which contains all the ne
 
 You should see a project folder structure after running this command that looks something like this:
 
+```bash
 my-first-kda-application
 ├── pom.xml
 └── src
@@ -51,6 +52,6 @@ my-first-kda-application
         │                   └── StreamingJob.java
         └── resources
             └── log4j2.properties
-
+```
 
 Navigate to StreamingJob.java to begin developing your applications on your local machine.
