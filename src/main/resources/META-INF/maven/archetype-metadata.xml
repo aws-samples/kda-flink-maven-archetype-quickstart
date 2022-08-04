@@ -1,0 +1,41 @@
+<!--
+ Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ SPDX-License-Identifier: MIT-0
+-->
+<archetype-descriptor
+		xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.1.0 https://maven.apache.org/xsd/archetype-descriptor-1.1.0.xsd"
+		name="Flink KDA Quickstart Job">
+	<requiredProperties>
+		<requiredProperty key="flink-version"></requiredProperty>
+		<requiredProperty key="java-version">
+			<defaultValue>1.11</defaultValue>
+		</requiredProperty>
+		<requiredProperty key="jdk-version">
+			<defaultValue>11</defaultValue>
+		</requiredProperty>
+		<requiredProperty key="scala-binary-version">
+			<defaultValue>2.12</defaultValue>
+		</requiredProperty>
+		<requiredProperty key="kda-connectors-version">
+			<defaultValue>2.0.0</defaultValue>
+		</requiredProperty>
+		<requiredProperty key="kda-runtime-version">
+			<defaultValue>1.2.0</defaultValue>
+		</requiredProperty>
+		<requiredProperty key="log4j-version">
+			<defaultValue>2.12.1</defaultValue>
+		</requiredProperty>
+	</requiredProperties>
+	<fileSets>
+		<fileSet filtered="true" packaged="true" encoding="UTF-8">
+			<directory>src/main/java</directory>
+			<includes>
+				<include>**/*.java</include>
+			</includes>
+		</fileSet>
+		<fileSet encoding="UTF-8">
+			<directory>src/main/resources</directory>
+		</fileSet>
+	</fileSets>
+</archetype-descriptor>

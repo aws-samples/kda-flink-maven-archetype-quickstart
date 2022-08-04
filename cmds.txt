@@ -1,0 +1,22 @@
+# installing archetype
+
+mvn install
+
+# using archetype
+
+mvn archetype:generate \
+    -DarchetypeGroupId=com.amazonaws.services.kinesisanalytics \
+    -DarchetypeArtifactId=flink-quickstart-kda-java \
+    -DarchetypeVersion=1.0-SNAPSHOT \
+    -DgroupId=com.amazonaws.services.kinesisanalytics \
+    -DartifactId=my-first-kda-application \
+    -Dversion=1.0.1 \
+    -Dpackage=com.amazonaws.services.kinesisanalytics \
+    -DinteractiveMode=false \
+    -Dflink-version=1.13.6 \
+    -Djava-version=1.11 \
+    -Djdk-version=11 \
+    -Dscala-binary-version=2.11 \
+    -Dkda-connectors-version=2.0.0 \
+    -Dkda-runtime-version=1.2.0 \
+    -Dlog4j-version=2.12.1
