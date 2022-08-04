@@ -1,6 +1,6 @@
 # Maven archetype project for KDA specific Flink quickstart
 
-This github project features a self-guided Kinesis Data Analytics for Apache Flink Maven Archetype to get you up and running with a Kinesis Data Analytics for Apache Flink application on your local machine simply by running a single command.
+This project features a local maven archetype for Kinesis Data Analytics for Apache Flink applications. A maven archetype is a project template which will generate a skeleton application for you to get started creating an Apache Flink application on Kinesis Data Analytics.
 
 ## Prerequisites for your local machine
 - [Install Java 8 or 11](https://www.java.com/en/download/help/download_options.html) 
@@ -36,3 +36,21 @@ mvn archetype:generate \
 ```
 
 Once you run this command, a project will be generated which contains all the necessary structure and code to get started developing a Kinesis Data Analytics for Apache Flink application.
+
+You should see a project folder structure after running this command that looks something like this:
+
+my-first-kda-application
+├── pom.xml
+└── src
+    └── main
+        ├── java
+        │   └── com
+        │       └── amazonaws
+        │           └── services
+        │               └── kinesisanalytics
+        │                   └── StreamingJob.java
+        └── resources
+            └── log4j2.properties
+
+
+Navigate to StreamingJob.java to begin developing your applications on your local machine.
